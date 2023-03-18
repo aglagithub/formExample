@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Formularios HTML</title>
+    <meta name="description" content="Formularios HTML" />
+    <meta name="keywords" content="formularios, forms" />
+    <meta name="author" content="AGLA" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header class="header"></header>
+    <br />
+    <main>
+      <h2 class="titulo">Formularios</h2>
+      <section class="content">
+        <section id="section1" class="seccion">
+          <h3>Formulario Básico</h3>
+          <br />
+          <form
+            action="https://formsubmit.co/angillama@gmail.com"
+            method="POST"
+            target="_blank"
+            autocomplete="on"
+          >
+            <!-- fieldset y legend para agrupar visualmente -->
+            <div class="element">
+              <div class="sectionLabel">fieldset:</div>
+              <fieldset>
+                <legend><label>legend</label></legend>
+                <i> otros controles</i>
+              </fieldset>
+            </div>
+
+            <!-- label y text -->
+            <div class="element">
+              <label class="sectionLabel" for="testElement"
+                >label y text: </label
+              ><br />
+              <input type="text" id="testElement" name="testElement" />
+            </div>
+
+            <!-- radio buttons -->
+            <div class="element">
+              <div class="sectionLabel">Radio Buttons:</div>
+              <div>
+                <input
+                  type="radio"
+                  id="option1"
+                  name="radioElement"
+                  value="Option1"
+                />
+                <label for="option1">opción 1</label>
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  id="option2"
+                  name="radioElement"
+                  value="Option2"
+                />
+                <label for="option2">opción 2</label>
+              </div>
+
+              <div>
+                <input
+                  type="radio"
+                  id="option3"
+                  name="radioElement"
+                  value="Option3"
+                />
+                <label for="option3">opción 3</label>
+              </div>
+            </div>
+            <!-- Check Boxes -->
+            <div class="element">
+              <div class="sectionLabel">Check Boxes:</div>
+              <div>
+                <input
+                  type="checkbox"
+                  id="checkElement1"
+                  name="checkElement1"
+                  value="valor1"
+                />
+                <label for="checkElement1">valor 1</label>
+              </div>
+              <div>
+                <input
+                  type="checkbox"
+                  id="checkElement2"
+                  name="checkElement2"
+                  value="valor2"
+                />
+                <label for="checkElement2">valor 2</label>
+              </div>
+              <div>
+                <input
+                  type="checkbox"
+                  id="checkElement3"
+                  name="checkElement3"
+                  value="valor3"
+                />
+                <label for="checkElement3">valor 3</label>
+              </div>
+            </div>
+
+            <!-- Select -->
+            <div class="element">
+              <div class="sectionLabel" for="selections">Select Box:</div>
+              <select id="selections" name="selectionsName" size="0">
+                <option value="sel1">Selección 1</option>
+                <option value="sel2">Selección 2</option>
+                <option value="sel3">Selección 3</option>
+                <option value="sel4" selected>Selección 4</option>
+              </select>
+            </div>
+
+            <!-- textArea --->
+            <div class="element">
+              <div class="sectionLabel">Text Area:</div>
+              <textarea name="message" rows="5" cols="30"> </textarea>
+            </div>
+
+            <!-- button -->
+            <div class="element">
+              <div class="sectionLabel">button:</div>
+              <button type="button" onclick="alert('Hello!')">button</button>
+            </div>
+
+            <!-- datalist -->
+
+            <div class="element">
+              <div class="sectionLabel">datalist:</div>
+              <input list="datalist" />
+              <datalist id="datalist">
+                <option value="Item1"></option>
+                <option value="Item2"></option>
+                <option value="Item2"></option>
+              </datalist>
+            </div>
+            <br />
+          </form>
+        </section>
+
+        <!-- ------------------- -->
+        <!-- FORMULARIO 2: input control types -->
+        <!-- ------------------- -->
+        <section id="section2" class="seccion">
+          <h3>Input Types</h3>
+          <br /> 
+          <form
+            action="https://formsubmit.co/angillama@gmail.com"
+            method="POST"
+            target="_blank"
+            autocomplete="off"
+          >
+            <!-- ------ -->
+            <!--  id="inp__" name="inp__Name" -->
+            <!-- Inputs -->
+            <div class="element">
+              <div class="sectionLabel">button</div>
+              <input
+                type="button"
+                id="inpButton"
+                name="inpButtonname"
+                value="button"
+              />
+            </div>
+
+            <div class="element">
+              <div class="sectionLabel">checkbox</div>
+              <input
+                type="checkbox"
+                id="inpCheckbox"
+                name="inpCheckboxName"
+                value="Checked"
+              />
+            </div>
+            <div class="element">
+              <div class="sectionLabel">radio</div>
+              <input
+                type="radio"
+                id="inpRadio"
+                name="inpRadioName"
+                value="Selected"
+              />
+            </div>
+
+            <div class="element">
+              <div class="sectionLabel">text</div>
+              <input type="text" id="inpText" name="inpTextName" />
+            </div>
+
+            <div class="element">
+              <div class="sectionLabel">number</div>
+              <input
+                type="number"
+                id="inpNumber"
+                name="inpNumberName"
+                min="0"
+                max="10"
+                step="1"
+                value="5"
+              />
+            </div>
+
+            <div class="element">
+              <div class="sectionLabel">password</div>
+
+              <input type="password" id="inpPassword" name="inppasswordName" />
+            </div>
+
+            <div class="element">
+              <div class="sectionLabel">tel</div>
+              <input
+                type="tel"
+                id="inpTel"
+                name="inpTelName"
+                pattern="[0-9]{7,10}"
+              />
+            </div>
+
+            <div class="element">
+              <div class="sectionLabel">url</div>
+              <input
+                type="url"
+                id="inpUrl"
+                name="inpUrlName"
+                pattern="/^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/"
+              />
+            </div>
+
+            <div class="element">
+              <div class="sectionLabel">date</div>
+
+              <input type="date" id="inpDate" name="inpDatename" />
+            </div>
+
+            <div class="element">
+              <div class="sectionLabel">datetime-local</div>
+              <input
+                type="datetime-local"
+                id="inpDatetime-local"
+                name="inpdatetime-localName"
+              />
+            </div>
+
+            <div class="element">
+              <div class="sectionLabel">time</div>
+              <input type="time" id="inpTime" name="inpTimeName" />
+            </div>
+
+            <div class="element">
+              <div class="sectionLabel">month</div>
+
+              <input type="month" id="inpMonth" name="inpMonthName" />
+            </div>
+
+            <div class="element">
+              <div class="sectionLabel">week</div>
+              <input type="week" id="inpWeek" name="inpWeekName" />
+            </div>
+
+            <div class="element">
+              <div class="sectionLabel">email</div>
+              <input type="email" id="inpEmail" name="inpEmailName" />
+            </div>
+
+            <div class="element">
+              <div class="sectionLabel">color</div>
+              <input type="color" id="inpColor" name="inpColorName" />
+            </div>
+
+            <div class="element">
+              <div class="sectionLabel">range</div>
+              <input
+                type="range"
+                id="inpRange"
+                name="inpRangeName"
+                min="0"
+                max="50"
+              />
+            </div>
+
+            <div class="element">
+              <div class="sectionLabel">search</div>
+              <input type="search" id="inpSearch" name="inpSearchName" />
+            </div>
+
+            <div class="element">
+              <div class="sectionLabel">file</div>
+              <input type="file" id="inpFile" name="inpFileName" />
+            </div>
+
+            <div class="element">
+              <div class="sectionLabel">hidden</div>
+              <input type="hidden" id="inpHidden" name="inpHidddenName" />
+            </div>
+
+            <div class="element">
+              <div class="sectionLabel">reset</div>
+              <input type="reset" id="inpReset" name="inpResetName" />
+            </div>
+            <br />
+
+            <!-- Submit Buttons -->
+            <div class="element">
+              <div class="sectionLabel">Submit Buttons:</div>
+              <input
+                type="image"
+                id="inpImage"
+                src="images/submit1.png"
+                name="inpImageName"
+                alt="Send"
+                width="48"
+                height="48"
+              />
+              <br />
+              <br />
+              <input type="submit" value="Submit Button" id="submitButton" />
+            </div>
+            <!-- ------ -->
+          </form>
+        </section>
+      </section>
+    </main>
+    <br />
+    <footer>&copy; AGLA 2023</footer>
+
+    <!-- ----------------------------- -->
+    <script src="./js/script.js"></script>
+  </body>
+</html>

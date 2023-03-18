@@ -1,0 +1,99 @@
+* {
+    /* Default rules*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lightblue;
+    margin: 5px;
+    padding: 5px;
+}
+
+header {
+    top: 5px;
+    width: 30px;
+
+}
+
+header h2 {
+    color: rgb(47, 20, 220);
+    text-align: center;
+}
+
+main {
+    background-color: inherit;
+    position: relative;
+    top: 10px;
+
+}
+
+.titulo {
+    color: rgb(13, 11, 31);
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-around;
+
+}
+
+
+.content {
+    display: flex;
+    width: 800px;
+    flex-direction: row;
+    background-color: lightseagreen;
+    justify-content: space-evenly;
+    padding: 10px;
+    border-radius: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    
+}
+
+.seccion{
+    background-color:  rgb(151, 204, 212);
+    padding: 15px;
+    border-radius: 20px;
+   
+    box-shadow: 10px 5px 5px #333;
+}
+
+.element{
+
+    border: 1px solid #222;
+    padding: 0.5rem;
+    border-radius: 10px;
+    margin: 5px;
+    box-shadow: 8px 3px 3px #333;
+}
+.sectionLabel{
+    font-weight: 700;
+    font-size: 1.05rem;
+    padding-bottom: .5rem;
+}
+
+#section1 form, #section2 form{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    
+}
+
+
+#submitButton {
+    background-color: blue;
+    color: white;
+    padding: 2px;
+}
+
+footer {
+    padding-top: .5rem;
+
+    font-size: medium;
+    font-weight: bold;
+    text-align: center;
+}
